@@ -1,0 +1,16 @@
+# Tag API v1
+
+GET       /                                     tech.vauldex.clock.me.controllers.TagControllerV1.getTags
+
++ nocsrf
+POST      /                                     tech.vauldex.clock.me.controllers.TagControllerV1.createTag
+
++ nocsrf
+PATCH     /group                                tech.vauldex.clock.me.controllers.TagControllerV1.groupUpdateTag
++ nocsrf
+PATCH     /:id/restore                          tech.vauldex.clock.me.controllers.TagControllerV1.restore(id: UUID)
++ nocsrf
+PATCH     /:id                                  tech.vauldex.clock.me.controllers.TagControllerV1.updateTag(id: UUID)
+
+DELETE    /:id/pseudo                           tech.vauldex.clock.me.controllers.TagControllerV1.pseudoDeleteTag(id: UUID)
+DELETE    /:id                                  tech.vauldex.clock.me.controllers.TagControllerV1.deleteTag(id: UUID)

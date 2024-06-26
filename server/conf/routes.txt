@@ -1,0 +1,74 @@
+# Web-App
+GET      /test                                                tech.vauldex.clock.me.controllers.WebAppController.test
+
+# Stripe
+POST    /stripe/webhook                                       tech.vauldex.clock.me.controllers.StripeController.webhook
+
+# Slack Bot
+POST    /slack/event                                          tech.vauldex.clock.me.controllers.SlackBotController.incomingEvent
+POST    /slack/interaction                                    tech.vauldex.clock.me.controllers.SlackBotController.incomingInteraction
+
+# Web-Socket
+GET      /ws                                                  tech.vauldex.clock.me.controllers.WebSocketController.ws
+GET      /ws/kiosk-qr                                         tech.vauldex.clock.me.controllers.WebSocketController.kioskQrWs
+GET      /test                                                tech.vauldex.clock.me.controllers.WebSocketController.test
+
+GET      /api/search                                          tech.vauldex.clock.me.controllers.SearchController.search(q: String, size: Int = 100)
+
+GET      /api/initialization                                  tech.vauldex.clock.me.controllers.WorkspaceController.initialization(limit: Option[Int])
+
+GET      /api/v1/initialization                               tech.vauldex.clock.me.controllers.WorkspaceControllerV1.initializationv1(limit: Option[Int])
+
+# Account
+->      /api/account                                          accounts.Routes
+
+# Account v1
+->      /api/v1/accounts                                      accountsv1.Routes
+
+# Timestamp
+->      /api/timestamp                                        timestamps.Routes
+
+# Timestamp v1
+->      /api/v1/activities                                    activitiesv1.Routes
+
+# Workspace
+->      /api/workspace                                        workspaces.Routes
+
+# Workspace v1
+->      /api/v1/workspaces                                    workspacesv1.Routes
+
+# Workspace v2
+->      /api/v2/workspaces                                    workspacesv2.Routes
+
+# Project
+->      /api/project                                          project.Routes
+
+# Project v1
+->      /api/v1/projects                                      projectv1.Routes
+
+# Project v2
+->     /api/v2/projects                                       projectv2.Routes
+
+# Tag
+->      /api/tag                                              tags.Routes
+
+# Tag v1
+->      /api/v1/tags                                          tagsv1.Routes
+
+# Task
+->      /api/task                                             tasks.Routes
+
+# Task v1
+->      /api/v1/tasks                                         tasksv1.Routes
+
+# Client
+->      /api/client                                           clients.Routes
+
+# Client v1
+->      /api/v1/clients                                       clientsv1.Routes
+
+# Kiosk
+->      /api/kiosk                                            kiosk.Routes
+
+# Kiosk v1
+->      /api/v1/kiosk                                         kioskv1.Routes

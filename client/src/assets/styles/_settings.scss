@@ -1,0 +1,108 @@
+@import 'mixins';
+
+// colors
+$primary-blue:             #2787F5;
+$midtones-blue:            #EDF5FA;
+$light-blue:               #FAFDFF;
+$warning-red:              #EE4842;
+$dark-text:                #07081D;
+$white-text:               #FFFFFF;
+$secondary-text:           #6E6E7B;
+$navy-blue:                #141226;
+$navy-blue-variant:        #2C3E50;
+$success:                  #16da81;
+$success-green-variant:    #41CB71;
+$disabled-text:            #9494A0;
+$disabled-white:           #F1F3F5;
+$shadow:                   #DCE6ED;
+$shadow-variant:           #E0E0E0;
+$favorite-yellow:          #FFBF1D;
+$orange:                   #FFA043;
+$dark-orange:              #EB5E00;
+$gray:                     #727272;
+$light-gray:               #9F9F9F;
+$regular:                  #354759;
+$secondary:                #828E99;
+$positive:                 #28BF0A;
+$negative:                 #CB2929;
+$neutral:                  #CB6E29;
+$border-color:             #DAE6F2;
+$hover:                    #E6ECF2;
+$active:                   #1885F2;
+$menu-shadow:              #000000;
+$primary-pane:             #F4F8FC;
+$active-hover:             #5CA0E6;
+$secondary-pane:           #F7F9FC;
+$inactive-text:            #DAE0E6;
+$disabled-field:           #EFEFEF;
+$disabled-border:          #AAAAAA;
+$secondary-button:         #D9EAFD;
+$logo:                     #0C4680;
+$emoji-effect-bg:          #FE5100;
+$upload-background:        #D8D8D8;
+$highlight-color:          linear-gradient($active-hover, $active) padding-box, linear-gradient(180deg, rgba(48,172,230,1) 0%, rgba(25,140,255,1) 100%) border-box;
+$highlight-color-variant:  linear-gradient($active-hover, $active) padding-box, linear-gradient(180deg, rgba(48,172,230,1) 0%, rgba(25,140,255,1) 100%) border-box;
+$background:               $light-blue;
+$background-dark:          $navy-blue;
+$red-orange:               #FF4900;
+$bright-gray:              #E9E9EB;
+$linen:                    #FBE9EB;
+$honey-dew:                #ECFEF0;
+$aero-blue:                #BEFFDE;
+$pale-cyan:                #92D8FF;
+$violets-are-blue:         #8F5AFF;
+$home-page-gradient:       linear-gradient(90deg, #A587FC 2.77%, #67B8E6 82.12%);
+
+//filters
+$secondary-filter:        invert(61%) sepia(9%) saturate(493%) hue-rotate(167deg) brightness(90%) contrast(89%);
+$white-filter:            invert(100%) sepia(98%) saturate(0%) hue-rotate(346deg) brightness(101%) contrast(104%);
+$positive-filter:         invert(56%) sepia(81%) saturate(2942%) hue-rotate(75deg) brightness(101%) contrast(95%);
+$negative-filter:         invert(24%) sepia(56%) saturate(3719%) hue-rotate(349deg) brightness(86%) contrast(84%);
+$neutral-filter:          invert(56%) sepia(16%) saturate(5071%) hue-rotate(349deg) brightness(87%) contrast(81%);
+$yellow-filter:           invert(96%) sepia(81%) saturate(3561%) hue-rotate(359deg) brightness(107%) contrast(103%);
+$light-blue-filter:       invert(46%) sepia(87%) saturate(3102%) hue-rotate(192deg) brightness(95%) contrast(100%);
+$active-filter:           invert(39%) sepia(32%) saturate(4216%) hue-rotate(194deg) brightness(100%) contrast(90%);
+$inactive-filter:         invert(98%) sepia(1%) saturate(6188%) hue-rotate(176deg) brightness(96%) contrast(88%);
+$disabled-field-filter:   invert(100%) sepia(86%) saturate(138%) hue-rotate(221deg) brightness(115%) contrast(87%);
+$primary-filter:          invert(24%) sepia(14%) saturate(1316%) hue-rotate(169deg) brightness(89%) contrast(83%);
+
+// text
+$main-font:                     Helvetica, sans-serif;
+$main-font-japanese:            $main-font;
+$text-size:                     15px;
+$text-size-small:               13px;
+$text-size-large:               20px;
+$text-size-xsmall:              12px;
+$line-height:                   16px;
+
+// button/container/field borders
+$border-width:                  2px;
+$border-radius:                 6px;
+$border-radius-10:              10px;
+$round-border-radius:           20px;
+$radius-8:                      8px;
+
+// input/button padding
+$field-padding:          .5rem .8rem;
+
+// spacing for element margins/paddings
+$element-spacing:           0.5rem 2%;
+$child-padding:                 1rem;
+
+// transitions
+$transition-length:             .25s;
+
+// image height and width
+$image-size:                    24px;
+$image-size-large:              36px;
+
+// box shadow
+$box-shadow:                    0 2px 6px 0 $shadow;
+
+// width
+$two-col-cards: calc(((100vw - 340px) / 2));
+$three-col-cards: calc(((100vw - 360px) / 3));
+
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
