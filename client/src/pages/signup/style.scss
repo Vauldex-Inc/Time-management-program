@@ -1,0 +1,98 @@
+.signup-page {
+  padding: 20px;
+  display: flex;
+}
+
+.content {
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  @media screen and (min-width: $breakpoint-med) {
+    flex-direction: row;
+    gap: 160px;
+  }
+  .languages {
+    text-align: center;
+  }
+}
+
+.hero {
+  display: flex;
+  max-width: 25rem;
+  padding: 40px;
+}
+
+h1 {
+  color: var(--text-primary);
+  font-size: 3.625em;
+}
+
+.signup-button-label {
+  margin-left: 12px;
+}
+
+.signup-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ > .buttons {
+    margin-top: 5em;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  @media screen and (min-width: $breakpoint-med) {
+    align-items: initial;
+  }
+}
+
+.wrapper {
+  padding: 0 10px;
+}
+
+.signup-separator {
+  display: block;
+  position: relative;
+  font-size: 1em;
+  text-align: center;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: var(--border);
+    left: 0;
+    top: 10px;
+    z-index: 1;
+    height: 1px;
+  }
+  span {
+    padding: 0 10px;
+    background: var(--background-primary-pane);
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    width: fit-content;
+  }
+}
+
+.consent {
+  padding: 0 10px;
+  margin-top: -10px;
+  p, a {
+    display: inline-block;
+    font-size: 12px;
+  }
+}
+
+.signin-link {
+  max-width: 360px;
+  margin-top: 60px;
+  p {
+    margin-bottom: .5em;
+    font-weight: bold;
+  }
+}

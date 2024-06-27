@@ -1,0 +1,15 @@
+# Client API v1
+
++ nocsrf
+POST      /                                     tech.vauldex.clock.me.controllers.ClientControllerV1.addClient
+
++ nocsrf
+PATCH     /:id/avatar                           tech.vauldex.clock.me.controllers.ClientControllerV1.updateAvatar(id: UUID)
+
+PATCH     /:id/name                             tech.vauldex.clock.me.controllers.ClientControllerV1.updateClientName(id: UUID)
+
+PATCH     /:id/restore                          tech.vauldex.clock.me.controllers.ClientControllerV1.restore(id: UUID)
+
+DELETE    /:id/pseudo                           tech.vauldex.clock.me.controllers.ClientControllerV1.pseudoDelete(id: UUID)
+
+DELETE    /:id                                  tech.vauldex.clock.me.controllers.ClientControllerV1.deleteClient(id: UUID)

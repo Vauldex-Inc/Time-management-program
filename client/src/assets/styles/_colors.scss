@@ -1,0 +1,29 @@
+@import "colors-light";
+@import "colors-dark";
+
+@mixin colors-base ($colors) {
+  @each $name, $value in $colors {
+    --#{$name}: #{$value};
+  }
+}
+
+// Light theme
+.light-mode {
+  @include colors-base($colors-light);
+}
+
+// Dark theme
+.dark-mode {
+  @include colors-base($colors-dark);
+}
+
+// High contrast mode
+@media screen and (prefers-contrast) {
+  .light-mode {
+    @include colors-base($colors-light-hc);
+  }
+
+  .dark-mode {
+    @include colors-base($colors-dark-hc);
+  }
+}
